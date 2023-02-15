@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <form id="formulario" action="">
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" /> <br/>
+
+                <label for="pw">Password:</label>
+                <input type="password" name="pw" id="pw" /> <br/>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" list="apellidosList" />
+                <datalist id="apellidosList">
+                    <option value="Lopez">Lopez</option>
+                    <option value="Lara">Lara</option>
+                    <option value="Laiz">Laiz</option>
+                    <option value="Sanz">Sanz</option>
+                    <option value="Sanchez">Sanchez</option>
+                    <option value="Sevilla">Sevilla</option>
+                </datalist><br/>
+
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad" min="0" max="110" /><br/>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" /><br/>
+
+                <label for="web">Sitio web:</label>
+                <input type="url" name="web" id="web" /><br/>
+
+                <label for="telefono">Telefono:</label>
+                <input type="tel" name="telefono" id="telefono" /><br/>
+
+                <label for="nacimiento">Fecha de nacimiento:</label>
+                <input type="date" name="nacimiento" id="nacimiento"><br/>
+
+                <label for="sexo">Sexo:</label>
+                <input type="radio" name="sexo" id="sexo" value="hombre" /> <label>Hombre</label>
+                <input type="radio" name="sexo" id="sexo" value="mujer" /> <label>Mujer</label><br/>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos academicos</legend>
+
+                <label for="estudios">Nivel de estudios:</label>
+                <select name="estudios" id="estudios">
+                    <option value="nada">Sin estudios</option>
+                    <option value="eso">ESO</option>
+                    <option value="medio">Grado Medio</option>
+                    <option value="superior">Grado Superior</option>
+                    <option value="grado">Grado</option>
+                </select><br/>
+
+                <label for="cursos">Cursos:</label>
+                <select name="cursos" id="cursos" multiple="multiple">
+                    <option value="ofimatica">Ofimatica</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="angular">Angular</option>
+                    <option value="react">React</option>
+                </select><br/>
+
+            </fieldset>
+
+            <input type="submit" value="Enviar" onclick="mostrar()" />
+            <input type="reset" value="Limpiar">
+        </form>
+    </body>
+</html>
