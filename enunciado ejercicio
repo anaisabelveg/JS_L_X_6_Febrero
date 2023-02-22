@@ -1,0 +1,6 @@
+crear la clase Persona encapsulada con propiedades (nombre, edad) y metodo mostrarInfo 
+crear la clase Empleado encapsulada y que hereda de Persona. Propiedad: sueldo 
+crear la clase Jefe encapsulada que hereda de Empleado. Propiedad: bonus 
+
+Desde el script del index.html 
+    crear una instancia de cada y mostrar los datos en pantalla
